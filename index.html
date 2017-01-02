@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>MyMediko- Specialists</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="images/favicon.png">
+  </head>
+  <body>
+    <a href="https://icons8.com/web-app/14866/Therapy" class="ad">Icons by Icons8</a>
+    <header class="header">
+      <div class="wrapper">
+        <div class="grid">
+          <h1>&#43;MyMediko&#43;</h1>
+        </div>
+        <div class="grid">
+          <ul>
+            <li><a href="#" class="header-links">How We Work</a></li>
+            <li><a href="#" class="header-links">Category Doctor's</a>
+            <li><a href="#" class="header-links">Specialists</a></li>
+            <li><a href="#" class="header-links">Jobs</a></li>
+            <li class="login-menu"><a href="#" class="btn">Log In</a>
+              <ul class="login-opener">
+                <li><a href="#">As A Patient</a></li>
+                <li><a href="#">As A Doctor</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="btn">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <header class="header-front-face">
+        <div class="grid">
+          <h1>&#43;MyMediko&#43;</h1>
+        </div>
+        <div class="account">
+        <li class="login-menu"><a href="#" class=""><img src="images/account.png" class="acc-icon"></a>
+          <ul class="login-opener">
+            <li><a href="#">As A Patient</a></li>
+            <li><a href="#">As A Doctor</a></li>
+          </ul>
+        </li>
+      </div>
+        <div id="barsWrapper">
+          <div id="barsContainer">
+            <div id="bc-first" class="animate"></div>
+            <div id="bc-second" class="animate"></div>
+            <div id="bc-third" class="animate"></div>
+          </div>
+        </div>
+        <aside id="mainAside" class="animate aside-bar">
+          <ul id="menu-list">
+            <li><a href="#">How We Work</a></li>
+            <li><a href="#">Category Doctor's</a></li>
+            <li><a href="#">Specialists</a></li>
+            <li><a href="#">Jobs</a></li>
+          </ul>
+        </aside>
+      </header>
+    <!--script of aside menu-->
+    <script>
+      var aside = document.getElementById('mainAside');
+      var asideOn = false
+      
+      document.getElementById('barsWrapper').addEventListener('click', function(){
+          if(asideOn){
+            aside.style.right = '-100%';
+            
+            asideOn = false;
+          }else{
+            aside.style.right = '0';
+            
+            asideOn = true;
+          }
+      });
+    </script>
+  <!--end of aside menu script-->
+    
+  <!--script for menu button-->
+    <script>
+      
+      function _(e){
+        return document.getElementById(e);
+      }
+      
+      var FirstBar = _('bc-first');
+      var SecondBar = _('bc-second');
+      var ThirdBar = _('bc-third');
+      var btn = _('barsWrapper');
+      var menuOn = false;
+
+      btn.addEventListener('click',function(){
+        
+        if(menuOn){
+          FirstBar.style.transform = 'rotate(0deg)';
+          FirstBar.style.top = '0px';
+          SecondBar.style.opacity= 1;
+          ThirdBar.style.transform = 'rotate(0deg)';
+          ThirdBar.style.bottom = '0px';
+          
+          menuOn = false;
+        }else{
+          FirstBar.style.transform = 'rotate(45deg)';
+          FirstBar.style.top = '8px';
+          SecondBar.style.opacity= 0;
+          ThirdBar.style.transform = 'rotate(-45deg)';
+          ThirdBar.style.bottom = '8px';
+          
+          menuOn = true;
+        }
+      });
+    </script>
+  <!--end of menu button script-->
+    <section class="hero-section background-img">
+      <h1>Our Best Specialists Category</h1>
+      <div class="specialists-list">
+        <a href="#">
+          <div class="box">
+            <img src="images/physician.png" class="icon">
+            <p>GENERAL PHYSICIAN</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box">
+            <img src="images/dental.png" class="icon">
+            <p>ORAL HYGIENE / DENTAL CARE</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box">
+            <img src="images/physiotherapy.png" class="icon">
+            <p>PHYSIOTHERAPY</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box">
+            <img src="images/ayurveda.png" class="icon">
+            <p>AYURVEDA</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box">
+            <img src="images/homeopath.png" class="icon">
+            <p>HOMEOPATH</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box">
+            <img src="images/diet.png" class="icon">
+            <p>DIET & NUTRITION</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box">
+            <img src="images/urology.png" class="icon">
+            <p>MALE SEXUAL HEALTH/ UROLOGY</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box">
+            <img src="images/gynaecology.png" class="icon">
+            <p>FEMALE SEXUAL HEALTH/ GYNAECOLOGY</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box">
+            <img src="images/dermatology.png" class="icon">
+            <p>DERMATOLOGY OR SKIN & HAIR CARE</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box">
+            <img src="images/Diabetes.png" class="icon">
+            <p>DIABETES/ ENDOCRINOLOGY</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box">
+            <img src="images/physcology.png" class="icon">
+            <p>PSYCHOLOGISTS</p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="box">
+            <img src="images/pedia.png" class="icon">
+            <p>PEDIATRICS</p>
+          </div>
+        </a>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-box">
+          <h3>Learn More</h3>
+          <ul>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Medical Advisory Board</a></li>
+            <li><a href="#">Find Doctors</a></li>
+            <li><a href="#">Find Doctors By Speciality</a></li>
+            <li><a href="#">Consultation Fee</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">How It Works</a></li>
+            <li><a href="#">Experts - Second Opinion</a></li>
+            <li><a href="#">Experts - General Health</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <h3>Policies</h3>
+          <ul>
+            <li><a href="#">Terms & conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">PAyment & Refund Policy</a></li>
+            <li><a href="#">Informed Consent</a></li>
+            <li><a href="#">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <p>
+        &copy; 2017 MyMediko. All Rights Reserved
+      </p>
+    </footer>
+  </body>
+</html>
